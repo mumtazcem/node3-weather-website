@@ -27,6 +27,13 @@ app.get('', (req, res) => {
     })
 })
 
+app.get('/pbi', (req, res) => {
+    res.render('pbi', {
+        title: 'PBI',
+        name: 'M. Cem Eris'
+    })
+})
+
 app.get('/about', (req, res) => {
     res.render('about', {
         title: 'About',
